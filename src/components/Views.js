@@ -1,10 +1,9 @@
-function Views() {
+function Views({ name, age, hobbies }) {
     return (
         <>
-            <form>
-                <label>Tell us about you!</label>
-                <input onChange={(e) => { setCurrentStatus(e.target.value) }}></input>
-            </form>
+            <h3>{name}</h3>
+            <h3>{age}</h3>
+            <h3>{hobbies}</h3>
         </>
     )
 }

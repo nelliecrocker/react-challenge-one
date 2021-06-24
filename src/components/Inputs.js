@@ -1,15 +1,16 @@
-function Inputs({ name, age, hobbies }) {
+function Inputs({ setName, setAge, setHobbies }) {
     return (
-        <>
-            <form>
-                <label>Name: {name}</label>
-                <input></input>
-                <label>Age: {age}</label>
-                <input></input>
-                <label>Hobbies: {hobbies}</label>
-                <input></input>
-            </form>
-        </>
+
+        <form>
+            <label> Name: </label>
+            <input onChange={(e) => { setName(e.target.value) }}></input>
+            <label> Age: </label>
+            <input onChange={(e) => { setAge(e.target.value) }}></input>
+            <label> Hobbies: </label>
+            <input onChange={(e) => { setHobbies(e.target.value) }}></input>
+        </form>
+
+
     )
 }
 
